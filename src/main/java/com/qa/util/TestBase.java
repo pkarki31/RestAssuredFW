@@ -11,8 +11,7 @@ public class TestBase {
 	public static void init(){
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("/Users/NaveenKhunteta/Documents/workspace/"
-					+ "RestAPIRestAssuredFW/src/main/java/com/qa/config/config.properties");
+			FileInputStream ip = new FileInputStream("src/main/java/com/qa/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
