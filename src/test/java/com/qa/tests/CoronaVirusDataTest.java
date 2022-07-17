@@ -78,7 +78,7 @@ public class CoronaVirusDataTest extends TestBase {
 
             dataModelObj.add(dataObj.getData().get(i));
 
-            System.out.println(" Date : "+dataModelObj.get(i).getDate()+" , Total Cases as of Today : "+dataModelObj.get(i).getLatestBy());
+            System.out.println("Total Corona Cases on "+dataModelObj.get(i).getDate()+ " : "+dataModelObj.get(i).getLatestBy());
 
 
         }

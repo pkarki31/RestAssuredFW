@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "length": {
+      "type": "integer"
+    },
+    "maxPageLimit": {
+      "type": "integer"
+    },
+    "totalRecords": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "date": {
+        "type": "String"
+      },
+      "areaName": {
+        "type": "String"
+      },
+      "areaCode": {
+        "type": "String"
+      },
+      "confirmedRate": {
+        "type": "integer"
+      },
+      "latestBy": {
+        "type": "integer"
+      },
+      "confirmed": {
+        "type": "integer"
+      },
+      "deathNew": {
+        "type": "integer"
+      },
+      "death": {
+        "type": "integer"
+      },
+      "deathRate": {
+        "type": "integer"
+      }
+    }
+  }}
