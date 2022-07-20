@@ -1,7 +1,9 @@
 package com.qa.model;
 
 
-import javax.xml.crypto.Data;
+
+import org.json.simple.JSONObject;
+
 import java.util.List;
 
 public class data {
@@ -10,6 +12,9 @@ public class data {
     private int maxPageLimit;
     private int totalRecords;
     private List<DataModel> data;
+    private JSONObject requestPayload;
+    private JSONObject pagination;
+
 
     public data (){
 
@@ -17,11 +22,14 @@ public class data {
     }
 
 
-    public data(int length, int maxPageLimit, int totalRecords, List<DataModel> data) {
+    public data(int length, int maxPageLimit, int totalRecords, List<DataModel> data,JSONObject requestPayload,JSONObject pagination) {
         this.length = length;
         this.maxPageLimit = maxPageLimit;
         this.totalRecords = totalRecords;
         this.data = data;
+        this.requestPayload=requestPayload;
+        this.pagination=pagination;
+
     }
 
     public int getLength() {
@@ -54,5 +62,21 @@ public class data {
 
     public void setData(List<DataModel> data) {
         this.data = data;
+    }
+
+    public JSONObject getRequestPayload() {
+        return requestPayload;
+    }
+
+    public void setRequestPayload(JSONObject requestPayload) {
+        this.requestPayload = requestPayload;
+    }
+
+    public JSONObject getPagination() {
+        return pagination;
+    }
+
+    public void setPagination(JSONObject pagination) {
+        this.pagination = pagination;
     }
 }

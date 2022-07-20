@@ -9,6 +9,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -28,6 +29,8 @@ public class ValidateDataTest extends  TestBase {
     private data dataObj;
 
     private List<DataModel> dataModelObj = new ArrayList<DataModel>();
+
+    private String AreadName = null;
 
     @BeforeMethod
     public void setUp() {
@@ -50,24 +53,22 @@ public class ValidateDataTest extends  TestBase {
     public void validateAttributeType() {
 
         dataObj  = response.getBody().as(data.class);
-        JsonPath jsonPathEvaluator = response.body().jsonPath();
 
-        List<String> areaNameList = new ArrayList<String>();
+        for (int i=0;i<dataObj.getData().size();i++){
 
-        System.out.println(dataObj.getData().size());
+            dataModelObj.add(dataObj.getData().get(i));
 
-        for (int i=1;i<=dataObj.getData().size();i++){
+            AreadName = dataModelObj.get(i).getAreaName();
 
-           // System.out.println("ji");
+            if(!AreadName.equals(prop.getProperty("areaName"))){
 
-          //  areaNameList.set(i,jsonPathEvaluator.get("data.areaName").toString());
-
-            System.out.println(i+"..."+jsonPathEvaluator.prettyPrint().equals(dataObj.getData()));
-
-          //  System.out.println("areaName : "+areaNameList.get(i));
+                Assert.assertEquals(AreadName,prop.getProperty("areaName"));
+                break;
+            }
 
         }
 
+        assert  true;
     }
 
     @Test
