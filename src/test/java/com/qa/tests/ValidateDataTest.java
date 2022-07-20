@@ -2,6 +2,7 @@ package com.qa.tests;
 
 import com.qa.model.DataModel;
 import com.qa.model.data;
+import com.qa.util.ReadDataFromExcel;
 import com.qa.util.TestBase;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
@@ -14,8 +15,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
@@ -31,6 +31,8 @@ public class ValidateDataTest extends  TestBase {
     private List<DataModel> dataModelObj = new ArrayList<DataModel>();
 
     private String AreadName = null;
+
+    private String LatestByFromAPI;
 
     @BeforeMethod
     public void setUp() {
@@ -77,6 +79,38 @@ public class ValidateDataTest extends  TestBase {
         File schema = new File(prop.getProperty("path")+"testdata/ExpectedSchema.json");
 
         response.then().body(matchesJsonSchema(schema));
+
+    }
+
+    @Test
+    public void validateCoronaCaseForGivenDate(){
+
+        ReadDataFromExcel dataFromExcel = new ReadDataFromExcel();
+
+        String latestByFromExcel = dataFromExcel.getDailyCoronaUpdateByDate("2022-05-19");
+
+        System.out.println("latestByFromExcel : "+latestByFromExcel);
+
+        dataObj  = response.getBody().as(data.class);
+
+        Map<String,String> dataModelObjMap = new HashMap();
+
+        for (int i=0;i<dataObj.getData().size();i++){
+
+            dataModelObj.add(dataObj.getData().get(i));
+
+            dataModelObjMap.put(dataModelObj.get(i).getDate(),dataModelObj.get(i).getLatestBy());
+
+
+
+        }
+
+        LatestByFromAPI = dataModelObjMap.get("2022-05-19");
+
+        System.out.println("LatestByFromAPI : "+LatestByFromAPI);
+
+        Assert.assertEquals(LatestByFromAPI,latestByFromExcel);
+
 
     }
 }
