@@ -36,18 +36,16 @@ public class ReadDataFromExcel {
             for(int i=1;i<=rowSize;i++)
             {
                 Row row = rowIterator.next().getSheet().getRow(i);
-                //For each row, iterate through all the columns
-               Iterator<Cell> cellIterator = row.cellIterator();
 
-                dateFromExcel = row.getCell(0).toString();
+                dateFromExcel = row.getCell(TestUtil.DATE_COLUMN).toString();
 
-                System.out.println("dateFromExcel : "+dateFromExcel);
-
-                System.out.println("dateValue : "+dateValue);
+//                System.out.println("dateFromExcel : "+dateFromExcel);
+//
+//                System.out.println("dateValue : "+dateValue);
 
                 if(dateFromExcel.equalsIgnoreCase(dateValue)){
 
-                    return String.format("%.0f", row.getCell(4).getNumericCellValue());
+                    return String.format("%.0f", row.getCell(TestUtil.LATESTBY_COLUMN).getNumericCellValue());
 
                 }
 

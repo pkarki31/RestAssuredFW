@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "length": {
-      "type": "String"
+      "type": "integer"
     },
     "maxPageLimit": {
       "type": "integer"
