@@ -1,5 +1,6 @@
 package com.qa.tests;
 
+import com.github.fge.jsonschema.core.exceptions.InvalidSchemaException;
 import com.qa.model.DataModel;
 import com.qa.model.data;
 import com.qa.util.ReadDataFromExcel;
@@ -64,7 +65,7 @@ public class ValidateDataTest extends  TestBase {
 
             if(!AreadName.equalsIgnoreCase(prop.getProperty("areaName"))){
 
-                Assert.assertEquals(AreadName,prop.getProperty("areaName"));
+              Assert.assertEquals(AreadName,prop.getProperty("areaName"));
                 break;
             }
 
@@ -78,7 +79,15 @@ public class ValidateDataTest extends  TestBase {
 
         File schema = new File(prop.getProperty("path")+"testdata/ExpectedSchema.json");
 
-        response.then().body(matchesJsonSchema(schema));
+        try {
+            response.then().body(matchesJsonSchema(schema));
+            assert true ;
+        }
+        catch (Exception obj){
+
+            obj.getMessage();
+            assert false;
+        }
 
     }
 
