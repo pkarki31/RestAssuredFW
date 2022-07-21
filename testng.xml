@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FREE CRM Application Test Automation Test Suite">
+
+
+    <test name="RestApi Automation Smoke Test ">
+        <packages>
+
+            <package name="com.qa.tests"/>
+        </packages>
+
+
+    </test>
+
+</suite>

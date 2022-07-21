@@ -87,7 +87,9 @@ public class ValidateDataTest extends  TestBase {
 
         ReadDataFromExcel dataFromExcel = new ReadDataFromExcel();
 
-        String latestByFromExcel = dataFromExcel.getDailyCoronaUpdateByDate("2022-05-19");
+        String checkCoronaCaseforDate = "2022-05-19";
+
+        String latestByFromExcel = dataFromExcel.getDailyCoronaUpdateByDate(checkCoronaCaseforDate);
 
         System.out.println("latestByFromExcel : "+latestByFromExcel);
 
@@ -105,7 +107,7 @@ public class ValidateDataTest extends  TestBase {
 
         }
 
-        LatestByFromAPI = dataModelObjMap.get("2022-05-19");
+        LatestByFromAPI = dataModelObjMap.get(checkCoronaCaseforDate);
 
         System.out.println("LatestByFromAPI : "+LatestByFromAPI);
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-21T04:28:55Z" name="Command line suite" finished-at="2022-07-21T04:29:01Z" duration-ms="6364">
+    <groups>
+    </groups>
+    <test started-at="2022-07-21T04:28:55Z" name="Command line test" finished-at="2022-07-21T04:29:01Z" duration-ms="6364">
+      <class name="com.qa.tests.CoronaVirusDataTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T09:58:59Z" name="setUp" finished-at="2022-07-21T09:59:00Z" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateStatusCodeTest()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T09:59:00Z" name="validateStatusCodeTest" finished-at="2022-07-21T09:59:00Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStatusCodeTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T09:59:00Z" name="setUp" finished-at="2022-07-21T09:59:01Z" duration-ms="687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dayWiseDataCoronaVirus()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T09:59:01Z" name="dayWiseDataCoronaVirus" finished-at="2022-07-21T09:59:01Z" depends-on-methods="com.qa.tests.CoronaVirusDataTest.validateStatusCodeTest" duration-ms="586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dayWiseDataCoronaVirus -->
+      </class> <!-- com.qa.tests.CoronaVirusDataTest -->
+      <class name="com.qa.tests.ValidateDataTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T09:58:55Z" name="setUp" finished-at="2022-07-21T09:58:57Z" duration-ms="2154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="JSONSchemaValidation()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T09:58:57Z" name="JSONSchemaValidation" finished-at="2022-07-21T09:58:57Z" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JSONSchemaValidation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T09:58:57Z" name="setUp" finished-at="2022-07-21T09:58:58Z" duration-ms="703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateAttributeType()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T09:58:58Z" name="validateAttributeType" finished-at="2022-07-21T09:58:58Z" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAttributeType -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T09:58:58Z" name="setUp" finished-at="2022-07-21T09:58:59Z" duration-ms="679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateCoronaCaseForGivenDate()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T09:58:59Z" name="validateCoronaCaseForGivenDate" finished-at="2022-07-21T09:58:59Z" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCoronaCaseForGivenDate -->
+      </class> <!-- com.qa.tests.ValidateDataTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
