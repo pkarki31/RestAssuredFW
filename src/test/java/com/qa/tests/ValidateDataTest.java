@@ -52,7 +52,7 @@ public class ValidateDataTest extends  TestBase {
     }
 
     @Test
-    public void validatemAreaNameForUnitedKingdom() {
+    public void validateAreaNameForUnitedKingdom() {
 
         dataObj  = response.getBody().as(data.class);
 
@@ -62,7 +62,7 @@ public class ValidateDataTest extends  TestBase {
 
             AreadName = dataModelObj.get(i).getAreaName();
 
-            if(!AreadName.equals(prop.getProperty("areaName"))){
+            if(!AreadName.equalsIgnoreCase(prop.getProperty("areaName"))){
 
                 Assert.assertEquals(AreadName,prop.getProperty("areaName"));
                 break;
