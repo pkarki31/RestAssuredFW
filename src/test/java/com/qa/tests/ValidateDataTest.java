@@ -52,7 +52,7 @@ public class ValidateDataTest extends  TestBase {
     }
 
     @Test
-    public void validateAttributeType() {
+    public void validatemAreaNameForUnitedKingdom() {
 
         dataObj  = response.getBody().as(data.class);
 

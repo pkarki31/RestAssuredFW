@@ -33,7 +33,6 @@ public class CoronaVirusDataTest extends TestBase {
     @BeforeMethod
     public void setUp(){
 
-
         TestBase.init();
 
         //1. define the base url
@@ -50,8 +49,6 @@ public class CoronaVirusDataTest extends TestBase {
 
     @Test
     public void validateStatusCodeTest(){
-
-
 
         //4. get the response code:
         int responseCode = response.getStatusCode();
@@ -75,7 +72,6 @@ public class CoronaVirusDataTest extends TestBase {
 
         for (int i=0;i<dataObj.getData().size();i++){
 
-
             dataModelObj.add(dataObj.getData().get(i));
 
             System.out.println("Total Corona Cases on "+dataModelObj.get(i).getDate()+ " : "+dataModelObj.get(i).getLatestBy());
@@ -83,16 +79,5 @@ public class CoronaVirusDataTest extends TestBase {
 
         }
 
-
-
-
-
-
-
-
     }
-
-
-
-
 }
