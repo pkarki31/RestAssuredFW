@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="TestSuite" time="1.442" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="TestSuite" time="1.569" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -60,9 +60,9 @@
     <property name="java.vendor.version" value="AdoptOpenJDK-11.0.11+9"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.qa.tests.ValidateDataTest" name="JSONSchemaValidation" time="0.372"/>
-  <testcase classname="com.qa.tests.ValidateDataTest" name="validateAttributeType" time="0.078"/>
-  <testcase classname="com.qa.tests.ValidateDataTest" name="validateCoronaCaseForGivenDate" time="0.498"/>
+  <testcase classname="com.qa.tests.ValidateDataTest" name="JSONSchemaValidation" time="0.362"/>
+  <testcase classname="com.qa.tests.ValidateDataTest" name="validateAreaNameForUnitedKingdom" time="0.097"/>
+  <testcase classname="com.qa.tests.ValidateDataTest" name="validateCoronaCaseForGivenDate" time="0.52"/>
   <testcase classname="com.qa.tests.CoronaVirusDataTest" name="validateStatusCodeTest" time="0"/>
-  <testcase classname="com.qa.tests.CoronaVirusDataTest" name="dayWiseDataCoronaVirus" time="0.494"/>
+  <testcase classname="com.qa.tests.CoronaVirusDataTest" name="dayWiseDataCoronaVirus" time="0.59"/>
 </testsuite>

@@ -2,50 +2,50 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-21T10:42:06Z" name="Command line suite" finished-at="2022-07-21T10:42:14Z" duration-ms="7818">
+  <suite started-at="2022-07-21T13:25:06Z" name="Command line suite" finished-at="2022-07-21T13:25:09Z" duration-ms="3260">
     <groups>
     </groups>
-    <test started-at="2022-07-21T10:42:06Z" name="Command line test" finished-at="2022-07-21T10:42:14Z" duration-ms="7818">
+    <test started-at="2022-07-21T13:25:06Z" name="Command line test" finished-at="2022-07-21T13:25:09Z" duration-ms="3260">
       <class name="com.qa.tests.CoronaVirusDataTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T16:12:12Z" name="setUp" finished-at="2022-07-21T16:12:13Z" duration-ms="819" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T18:55:08Z" name="setUp" finished-at="2022-07-21T18:55:08Z" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateStatusCodeTest()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T16:12:13Z" name="validateStatusCodeTest" finished-at="2022-07-21T16:12:13Z" duration-ms="0" status="PASS">
+        <test-method signature="validateStatusCodeTest()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T18:55:08Z" name="validateStatusCodeTest" finished-at="2022-07-21T18:55:08Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateStatusCodeTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T16:12:13Z" name="setUp" finished-at="2022-07-21T16:12:14Z" duration-ms="778" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T18:55:08Z" name="setUp" finished-at="2022-07-21T18:55:08Z" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="dayWiseDataCoronaVirus()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T16:12:14Z" name="dayWiseDataCoronaVirus" finished-at="2022-07-21T16:12:14Z" depends-on-methods="com.qa.tests.CoronaVirusDataTest.validateStatusCodeTest" duration-ms="483" status="PASS">
+        <test-method signature="dayWiseDataCoronaVirus()[pri:0, instance:com.qa.tests.CoronaVirusDataTest@47d90b9e]" started-at="2022-07-21T18:55:08Z" name="dayWiseDataCoronaVirus" finished-at="2022-07-21T18:55:09Z" depends-on-methods="com.qa.tests.CoronaVirusDataTest.validateStatusCodeTest" duration-ms="574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dayWiseDataCoronaVirus -->
       </class> <!-- com.qa.tests.CoronaVirusDataTest -->
       <class name="com.qa.tests.ValidateDataTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T16:12:06Z" name="setUp" finished-at="2022-07-21T16:12:10Z" duration-ms="3379" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T18:55:06Z" name="setUp" finished-at="2022-07-21T18:55:07Z" duration-ms="1373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="JSONSchemaValidation()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T16:12:10Z" name="JSONSchemaValidation" finished-at="2022-07-21T16:12:10Z" duration-ms="372" status="PASS">
+        <test-method signature="JSONSchemaValidation()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T18:55:07Z" name="JSONSchemaValidation" finished-at="2022-07-21T18:55:07Z" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JSONSchemaValidation -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T16:12:10Z" name="setUp" finished-at="2022-07-21T16:12:11Z" duration-ms="705" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T18:55:07Z" name="setUp" finished-at="2022-07-21T18:55:07Z" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateAttributeType()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T16:12:11Z" name="validateAttributeType" finished-at="2022-07-21T16:12:11Z" duration-ms="78" status="PASS">
+        <test-method signature="validateAreaNameForUnitedKingdom()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T18:55:07Z" name="validateAreaNameForUnitedKingdom" finished-at="2022-07-21T18:55:08Z" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateAttributeType -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T16:12:11Z" name="setUp" finished-at="2022-07-21T16:12:12Z" duration-ms="690" status="PASS">
+        </test-method> <!-- validateAreaNameForUnitedKingdom -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T18:55:08Z" name="setUp" finished-at="2022-07-21T18:55:08Z" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateCoronaCaseForGivenDate()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T16:12:12Z" name="validateCoronaCaseForGivenDate" finished-at="2022-07-21T16:12:12Z" duration-ms="499" status="PASS">
+        <test-method signature="validateCoronaCaseForGivenDate()[pri:0, instance:com.qa.tests.ValidateDataTest@460d0a57]" started-at="2022-07-21T18:55:08Z" name="validateCoronaCaseForGivenDate" finished-at="2022-07-21T18:55:08Z" duration-ms="520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCoronaCaseForGivenDate -->
